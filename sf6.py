@@ -8,7 +8,7 @@ def build_spectrum(freqs, ints):
         spec += (Si / (sigma * np.sqrt(2*np.pi))) * np.exp(-0.5*((nu-f)/sigma)**2)
     return spec
 
-if __name__ == "__main__":# Physical constants and grid
+if __name__ == "__main__":
     h = 6.62607015e-34; c = 2.99792458e8; k = 1.380649e-23; T = 288.0; NA = 6.02214076e23
     nu = np.linspace(300, 1100, 4000); nu_m = nu * 100
 
